@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join 40 Days of Prayer for America — a national campaign of guided intercession for the soul of the nation as we mark 250 years of liberty." />
+  <meta name="theme-color" content="#0B1F3A" />
+  <link rel="dns-prefetch" href="https://api.ministrybytext.com" />
+  <link rel="dns-prefetch" href="https://firebaseio.com" />
+  <title>40 Days of Prayer — America's National Day of Prayer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet" /></noscript>
+  <style>
+    :root {
+      --navy:#0B1F3A; --navy-mid:#122B52; --navy-lt:#1A3A6E;
+      --crimson:#B22234; --crimson-lt:#D4354A;
+      --gold:#C9A84C; --gold-lt:#E8C96B;
+      --parchment:#F5EDD8; --white:#FFFFFF;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:'Crimson Text',Georgia,serif;background:var(--navy);color:var(--parchment);min-height:100vh;overflow-x:hidden}
+
+    /* STAR BG */
+    .star-bg{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse at 20% 30%,#1A3A6E 0%,#0B1F3A 50%,#050D1A 100%);overflow:hidden;pointer-events:none;will-change:opacity}
+    .star-bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(1px 1px at 10% 15%,rgba(255,255,255,.9) 0%,transparent 100%),radial-gradient(1px 1px at 25% 8%,rgba(255,255,255,.7) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 40% 22%,rgba(255,255,255,.8) 0%,transparent 100%),radial-gradient(1px 1px at 55% 5%,rgba(255,255,255,.6) 0%,transparent 100%),radial-gradient(1px 1px at 70% 18%,rgba(255,255,255,.9) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 85% 10%,rgba(255,255,255,.7) 0%,transparent 100%),radial-gradient(1px 1px at 92% 28%,rgba(255,255,255,.8) 0%,transparent 100%),radial-gradient(1px 1px at 5% 45%,rgba(255,255,255,.5) 0%,transparent 100%),radial-gradient(1px 1px at 18% 60%,rgba(255,255,255,.6) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 33% 52%,rgba(255,255,255,.4) 0%,transparent 100%),radial-gradient(1px 1px at 48% 70%,rgba(255,255,255,.7) 0%,transparent 100%),radial-gradient(1px 1px at 62% 42%,rgba(255,255,255,.5) 0%,transparent 100%),radial-gradient(1px 1px at 78% 65%,rgba(255,255,255,.6) 0%,transparent 100%),radial-gradient(1.5px 1.5px at 90% 55%,rgba(255,255,255,.8) 0%,transparent 100%),radial-gradient(1px 1px at 15% 80%,rgba(255,255,255,.4) 0%,transparent 100%),radial-gradient(1px 1px at 60% 82%,rgba(255,255,255,.6) 0%,transparent 100%);animation:twinkle 6s ease-in-out infinite alternate}
+    .star-bg::after{content:'';position:absolute;inset:0;background-image:radial-gradient(1px 1px at 7% 35%,rgba(201,168,76,.6) 0%,transparent 100%),radial-gradient(1px 1px at 22% 72%,rgba(201,168,76,.4) 0%,transparent 100%),radial-gradient(1px 1px at 50% 30%,rgba(201,168,76,.5) 0%,transparent 100%),radial-gradient(1px 1px at 82% 40%,rgba(201,168,76,.6) 0%,transparent 100%);animation:twinkle 9s ease-in-out infinite alternate-reverse}
+    @keyframes twinkle{0%{opacity:.6}100%{opacity:1}}
+
+    /* STRIPES */
+    .stripes-top{height:8px;background:repeating-linear-gradient(90deg,var(--crimson) 0px,var(--crimson) 14px,var(--white) 14px,var(--white) 28px);position:relative;z-index:100}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:99;background:rgba(11,31,58,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.3);padding:0 1.5rem}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav-brand{font-family:'Cinzel',serif;font-size:.85rem;font-weight:700;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:.6rem}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,237,216,.75);text-decoration:none;padding:.45rem .85rem;border-radius:3px;transition:all .2s;position:relative}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold);background:rgba(201,168,76,.08)}
+    .nav-links a.active::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:60%;height:2px;background:var(--gold);border-radius:2px}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
+    .mobile-menu{display:none;flex-direction:column;background:rgba(11,31,58,.98);padding:1rem 1.5rem;gap:.5rem;border-top:1px solid rgba(201,168,76,.2)}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-family:'Cinzel',serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--parchment);text-decoration:none;padding:.6rem 0;border-bottom:1px solid rgba(201,168,76,.1)}
+    .mobile-menu a:hover{color:var(--gold)}
+
+    /* PAGES */
+    #app{position:relative;z-index:1}
+    .page{display:none;min-height:calc(100vh - 72px);animation:fadeUp .5s ease forwards}
+    .page.active{display:block}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+    /* HERO */
+    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:4rem 1.5rem 3rem;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;bottom:0;left:0;right:0;height:60%;background:radial-gradient(ellipse at 50% 100%,rgba(178,34,52,.18) 0%,transparent 70%);pointer-events:none}
+    .torch-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 65%);pointer-events:none;animation:pulse 4s ease-in-out infinite;will-change:transform,opacity}
+    @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.6}50%{transform:translate(-50%,-50%) scale(1.08);opacity:1}}
+    .hero-eyebrow{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.3em;color:var(--crimson-lt);text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem}
+    .hero-eyebrow::before,.hero-eyebrow::after{content:'★';color:var(--gold);font-size:.55rem}
+    .hero-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,8vw,7rem);font-weight:900;line-height:.95;color:var(--parchment);margin-bottom:.5rem;text-shadow:0 4px 30px rgba(0,0,0,.5)}
+    .hero-title em{font-style:italic;color:var(--gold);display:block}
+    .hero-subtitle{font-family:'Cinzel',serif;font-size:clamp(1rem,2.5vw,1.5rem);font-weight:400;letter-spacing:.18em;color:rgba(245,237,216,.7);text-transform:uppercase;margin-bottom:2rem}
+    .hero-divider{width:180px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto 1.8rem}
+    .hero-verse{max-width:560px;font-size:1.22rem;font-style:italic;color:rgba(245,237,216,.85);line-height:1.6;margin-bottom:.5rem}
+    .hero-verse-ref{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+    .hero-cta-wrap{margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+    .scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.4rem;opacity:.45}
+    .scroll-hint span{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--parchment)}
+    .scroll-arrow{width:12px;height:12px;border-right:1.5px solid var(--parchment);border-bottom:1.5px solid var(--parchment);transform:rotate(45deg);animation:bounce 1.6s ease-in-out infinite}
+    @keyframes bounce{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(5px)}}
+
+    /* SHARED SECTION */
+    section{padding:5rem 1.5rem}
+    .container{max-width:1100px;margin:0 auto}
+    .section-label{font-family:'Cinzel',serif;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--crimson-lt);margin-bottom:.8rem;display:flex;align-items:center;gap:.7rem}
+    .section-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(178,34,52,.4),transparent)}
+    .section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:700;color:var(--parchment);line-height:1.15;margin-bottom:1.5rem}
+    .section-title span{color:var(--gold)}
+    .section-body{font-size:1.18rem;line-height:1.75;color:rgba(245,237,216,.8);max-width:680px}
+
+    /* COUNTER */
+    .counter-section{background:rgba(18,43,82,.5);border-top:1px solid rgba(201,168,76,.15);border-bottom:1px solid rgba(201,168,76,.15);padding:3.5rem 1.5rem}
+    .counter-grid{display:flex;justify-content:center;align-items:center;gap:.5rem;flex-wrap:wrap}
+    .counter-item{text-align:center;padding:.5rem 1rem}
+    .counter-num{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,10vw,6rem);font-weight:900;color:var(--gold);line-height:1;text-shadow:0 0 40px rgba(201,168,76,.3)}
+    .counter-label{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,237,216,.5);margin-top:.3rem}
+    .counter-sep{font-family:'Playfair Display',serif;font-size:4rem;color:var(--crimson);opacity:.5;line-height:1;padding-bottom:1rem}
+
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 2rem;font-family:'Cinzel',serif;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:3px;cursor:pointer;transition:all .25s;border:none}
+    .btn-primary{background:var(--crimson);color:var(--white);box-shadow:0 4px 20px rgba(178,34,52,.4)}
+    .btn-primary:hover{background:var(--crimson-lt);transform:translateY(-2px);box-shadow:0 8px 30px rgba(178,34,52,.5)}
+    .btn-outline{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
+    .btn-outline:hover{background:rgba(201,168,76,.1);transform:translateY(-2px)}
+
+    /* PRAYER CARDS */
+    .prayer-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:3rem}
+    .prayer-card{background:rgba(18,43,82,.4);border:1px solid rgba(201,168,76,.15);border-radius:6px;padding:1.8rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s,background .3s,box-shadow .3s;contain:layout style}
+    .prayer-card:hover{border-color:rgba(201,168,76,.4);transform:translateY(-4px);background:rgba(18,43,82,.65);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+    .prayer-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--crimson),var(--gold))}
+    .card-week{font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--crimson-lt);margin-bottom:.5rem}
+    .card-days{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:.6rem}
+    .card-theme{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--parchment);margin-bottom:.7rem;line-height:1.3}
+    .card-focus{font-size:.95rem;color:rgba(245,237,216,.65);line-height:1.55}
+    .card-verse{margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(201,168,76,.12);font-size:.88rem;font-style:italic;color:rgba(201,168,76,.8)}
+
+    /* DAILY PRAYER */
+    .day-selector{margin-top:2.5rem}
+    .day-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+    .day-tab{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.08em;padding:.4rem .7rem;border:1px solid rgba(201,168,76,.2);border-radius:3px;color:rgba(245,237,216,.5);cursor:pointer;background:none;transition:all .2s}
+    .day-tab:hover{border-color:rgba(201,168,76,.5);color:var(--gold)}
+    .day-tab.selected{background:var(--crimson);border-color:var(--crimson);color:var(--white)}
+    .prayer-content{background:rgba(18,43,82,.45);border:1px solid rgba(201,168,76,.2);border-radius:8px;padding:2.5rem;position:relative}
+    .prayer-day-num{font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--crimson-lt);margin-bottom:.5rem}
+    .prayer-day-title{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--parchment);margin-bottom:.4rem}
+    .prayer-scripture{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:rgba(201,168,76,.9);margin-bottom:1.8rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(201,168,76,.15)}
+    .prayer-points h4{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+    .prayer-points ul{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+    .prayer-points ul li{display:flex;gap:.8rem;align-items:flex-start;font-size:1.05rem;color:rgba(245,237,216,.82);line-height:1.6}
+    .prayer-points ul li::before{content:'★';color:var(--crimson-lt);font-size:.6rem;margin-top:.4rem;flex-shrink:0}
+
+    /* ABOUT */
+    .about-hero{background:linear-gradient(180deg,rgba(11,31,58,0) 0%,rgba(18,43,82,.7) 100%);padding:5rem 1.5rem 3rem;text-align:center;border-bottom:1px solid rgba(201,168,76,.15)}
+    .about-seal{width:90px;height:90px;margin:0 auto 1.5rem;border-radius:50%;border:2px solid rgba(201,168,76,.4);display:flex;align-items:center;justify-content:center;font-size:2.2rem;background:radial-gradient(circle,rgba(201,168,76,.1),transparent);box-shadow:0 0 40px rgba(201,168,76,.12);animation:rotate-slow 30s linear infinite;will-change:transform}
+    @keyframes rotate-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    .about-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:900;color:var(--parchment);line-height:1.1;margin-bottom:1rem}
+    .about-hero h1 em{font-style:italic;color:var(--gold)}
+    .about-hero p{font-size:1.15rem;color:rgba(245,237,216,.7);max-width:560px;margin:0 auto;line-height:1.7}
+    .about-content{padding:4rem 1.5rem}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;max-width:1100px;margin:0 auto}
+    .about-text h2{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--parchment);margin-bottom:1.2rem;line-height:1.2}
+    .about-text h2 span{color:var(--gold)}
+    .about-text p{font-size:1.08rem;line-height:1.8;color:rgba(245,237,216,.78);margin-bottom:1.2rem}
+    .anniversary-box{background:linear-gradient(135deg,rgba(178,34,52,.15),rgba(201,168,76,.08));border:1px solid rgba(201,168,76,.25);border-radius:8px;padding:2rem;text-align:center;position:sticky;top:90px}
+    .anniversary-num{font-family:'Playfair Display',serif;font-size:5rem;font-weight:900;color:var(--gold);line-height:1;text-shadow:0 0 40px rgba(201,168,76,.4)}
+    .anniversary-label{font-family:'Cinzel',serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,237,216,.6);margin-top:.5rem}
+    .anniversary-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.3),transparent);margin:1.5rem 0}
+
+    /* CTA BANNER */
+    .cta-banner{background:linear-gradient(135deg,var(--crimson) 0%,#8B1A26 100%);padding:4rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+    .cta-banner::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,.02) 40px,rgba(255,255,255,.02) 80px)}
+    .cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:1rem;position:relative}
+    .cta-banner p{font-size:1.12rem;color:rgba(255,255,255,.85);max-width:560px;margin:0 auto 2rem;line-height:1.7;position:relative}
+
+    /* QUOTE */
+    .quote-section{padding:4rem 1.5rem;background:rgba(18,43,82,.35);border-top:1px solid rgba(201,168,76,.1);border-bottom:1px solid rgba(201,168,76,.1)}
+    .quote-carousel{max-width:760px;margin:0 auto;text-align:center}
+    blockquote{font-family:'Playfair Display',serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-style:italic;color:rgba(245,237,216,.85);line-height:1.6;margin-bottom:1.2rem;position:relative;padding:0 2rem}
+    blockquote::before{content:'\201C';position:absolute;left:-.2rem;top:-.5rem;font-size:4rem;color:rgba(201,168,76,.2);font-family:'Playfair Display',serif;line-height:1}
+    cite{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-style:normal}
+
+    /* STRIPE ACCENT */
+    .stripe-accent{height:5px;background:repeating-linear-gradient(90deg,var(--crimson) 0px,var(--crimson) 30px,transparent 30px,transparent 40px,var(--white) 40px,var(--white) 70px,transparent 70px,transparent 80px);opacity:.25}
+
+    /* PROCLAMATION */
+    .proclamation{max-width:720px;margin:0 auto;background:rgba(18,43,82,.4);border:1px solid rgba(201,168,76,.2);border-radius:8px;padding:2.5rem;position:relative}
+    .proclamation::before,.proclamation::after{content:'\2726 \2726 \2726';display:block;text-align:center;font-size:.6rem;letter-spacing:.6em;color:rgba(201,168,76,.4)}
+    .proclamation::before{margin-bottom:1.5rem}
+    .proclamation::after{margin-top:1.5rem}
+    .proclamation p{font-size:1.08rem;line-height:1.85;color:rgba(245,237,216,.8);text-align:justify;margin-bottom:1rem}
+
+    /* SHARE MODAL */
+    .share-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(5,13,26,.85);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1.5rem}
+    .share-overlay.open{display:flex;animation:fadeIn .25s ease forwards}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .share-modal{background:linear-gradient(145deg,#122B52,#0B1F3A);border:1px solid rgba(201,168,76,.3);border-radius:12px;padding:2.5rem;max-width:480px;width:100%;position:relative;animation:slideUp .3s ease forwards}
+    @keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .share-close{position:absolute;top:1.2rem;right:1.2rem;background:none;border:none;color:rgba(245,237,216,.4);font-size:1.3rem;cursor:pointer;line-height:1;transition:color .2s}
+    .share-close:hover{color:var(--parchment)}
+    .share-modal h3{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:700;color:var(--parchment);margin-bottom:.4rem}
+    .share-modal p{font-size:1rem;color:rgba(245,237,216,.65);margin-bottom:2rem;line-height:1.6}
+    .share-buttons{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.5rem}
+    .share-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem 1rem;border-radius:6px;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;transition:all .2s;text-decoration:none}
+    .share-btn-sms{background:#25A244;color:white}
+    .share-btn-facebook{background:#1877F2;color:white}
+    .share-btn-twitter{background:#1DA1F2;color:white}
+    .share-btn-email{background:var(--crimson);color:white}
+    .share-btn-copy{background:rgba(201,168,76,.15);color:var(--gold);border:1px solid rgba(201,168,76,.3);grid-column:1/-1}
+    .share-btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+    .share-url-box{display:flex;gap:.5rem;background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.15);border-radius:6px;padding:.75rem 1rem;align-items:center}
+    .share-url-box input{flex:1;background:none;border:none;color:rgba(245,237,216,.6);font-size:.85rem;outline:none}
+    .share-url-box button{font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(201,168,76,.3);border-radius:4px;padding:.3rem .7rem;cursor:pointer;transition:all .2s;white-space:nowrap}
+    .share-url-box button:hover{background:rgba(201,168,76,.1)}
+
+    /* TOAST */
+    .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy-mid);border:1px solid rgba(201,168,76,.3);border-radius:6px;padding:.75rem 1.5rem;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);z-index:300;opacity:0;transition:all .3s;pointer-events:none}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+    /* FAB */
+    .fab-share{position:fixed;bottom:2rem;right:2rem;z-index:98;background:var(--crimson);color:var(--white);border:none;border-radius:50px;padding:.75rem 1.2rem;display:flex;align-items:center;gap:.5rem;font-family:'Cinzel',serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;box-shadow:0 4px 20px rgba(178,34,52,.5);transition:all .25s}
+    .fab-share:hover{background:var(--crimson-lt);transform:translateY(-3px)}
+
+    /* SPONSOR FOOTER */
+    .sponsor-footer{background:#ffffff;border-top:3px solid #00C853;padding:1.6rem 2rem;width:100%;position:relative;z-index:1}
+    .sponsor-footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+    .sponsor-footer-left{display:flex;flex-direction:column;gap:.3rem}
+    .sponsor-footer-label{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:#00C853;font-weight:700}
+    .sponsor-footer-motto{font-family:'Crimson Text',Georgia,serif;font-size:1rem;font-style:italic;color:#3a3a3a}
+    .sponsor-footer-logo a{display:block;transition:opacity .2s,transform .2s}
+    .sponsor-footer-logo a:hover{opacity:.75;transform:scale(1.03)}
+    .sponsor-logo{height:44px;width:auto;display:block}
+    @media(max-width:600px){.sponsor-footer-inner{flex-direction:column;align-items:flex-start}.sponsor-logo{height:34px}}
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .prayer-grid{grid-template-columns:1fr}
+      .counter-sep{display:none}
+      .share-buttons{grid-template-columns:1fr}
+      .about-grid{grid-template-columns:1fr}
+      .anniversary-box{position:static}
+      .fab-share{bottom:1.5rem;right:1.5rem}
+    }
+    @media(max-width:600px){
+      .sponsor-inner{flex-direction:column;align-items:flex-start;gap:1rem}
+      .sponsor-logo{height:34px}
+    }
+    @media(max-width:480px){
+      section{padding:3.5rem 1rem}
+      .hero{padding:3rem 1rem 2rem}
+      .prayer-content{padding:1.5rem}
+    }
+
+    /* ── I PRAYED BUTTON ───────────────────────────────────────────────── */
+    .prayed-section {
+      margin-top: 2rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(201,168,76,0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9rem;
+      text-align: center;
+    }
+    .prayed-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(245,237,216,0.45);
+    }
+    .prayed-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 2.2rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.25s;
+      background: var(--crimson);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(178,34,52,0.35);
+    }
+    .prayed-btn:hover:not(:disabled) {
+      background: var(--crimson-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(178,34,52,0.5);
+    }
+    .prayed-btn:disabled {
+      background: rgba(18,43,82,0.6);
+      color: rgba(245,237,216,0.4);
+      box-shadow: none;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .prayed-btn.prayed-done {
+      background: #1a5c36;
+      color: #7fffb8;
+      box-shadow: 0 4px 20px rgba(0,200,83,0.2);
+    }
+    .prayed-count-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    .prayed-count {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 3ch;
+      text-align: center;
+      text-shadow: 0 0 30px rgba(201,168,76,0.25);
+    }
+    .prayed-count-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(245,237,216,0.4);
+    }
+    .prayed-already {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.92rem;
+      font-style: italic;
+      color: #7fffb8;
+    }
+    .prayed-btn .prayed-icon { font-size: 1rem; }
+    @keyframes prayedPop {
+      0%   { transform: scale(1); }
+      40%  { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+    .prayed-pop { animation: prayedPop 0.35s ease forwards; }
+
+    /* ── LOGIN MODAL ─────────────────────────────────────────── */
+    .login-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      /* Blur the content behind */
+      backdrop-filter: blur(4px) brightness(0.65);
+      -webkit-backdrop-filter: blur(4px) brightness(0.65);
+      background: rgba(5, 13, 26, 0.55);
+      animation: loginFadeIn 0.4s ease forwards;
+    }
+    .login-overlay.hidden {
+      display: none;
+    }
+    @keyframes loginFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .login-modal {
+      background: linear-gradient(160deg, #0f2444 0%, #0B1F3A 100%);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 14px;
+      padding: 2.8rem 2.4rem 2.4rem;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+      animation: loginSlideUp 0.4s cubic-bezier(0.22,1,0.36,1) forwards;
+      position: relative;
+      overflow: hidden;
+    }
+    .login-modal::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--crimson), var(--gold), var(--crimson));
+    }
+    @keyframes loginSlideUp {
+      from { opacity: 0; transform: translateY(28px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .login-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--crimson-lt);
+      text-align: center;
+      margin-bottom: 0.6rem;
+    }
+    .login-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--parchment);
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .login-title em { font-style: italic; color: var(--gold); }
+    .login-subtitle {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.98rem;
+      color: rgba(245,237,216,0.6);
+      text-align: center;
+      line-height: 1.55;
+      margin-bottom: 2rem;
+    }
+    .login-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-bottom: 1.1rem;
+    }
+    .login-field label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245,237,216,0.55);
+    }
+    .login-field input {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 5px;
+      padding: 0.75rem 1rem;
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 1.05rem;
+      color: var(--parchment);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+    }
+    .login-field input::placeholder { color: rgba(245,237,216,0.25); }
+    .login-field input:focus {
+      border-color: rgba(201,168,76,0.6);
+      background: rgba(255,255,255,0.08);
+    }
+    .login-field input.error { border-color: var(--crimson-lt); }
+    .login-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .login-error-msg {
+      font-size: 0.82rem;
+      color: var(--crimson-lt);
+      text-align: center;
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+      min-height: 1.2rem;
+    }
+    .login-submit {
+      width: 100%;
+      padding: 0.9rem;
+      margin-top: 0.5rem;
+      background: var(--crimson);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Cinzel', serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(178,34,52,0.4);
+    }
+    .login-submit:hover { background: var(--crimson-lt); transform: translateY(-1px); }
+    .login-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .login-legal {
+      font-size: 0.75rem;
+      color: rgba(245,237,216,0.3);
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 1rem;
+    }
+    .login-legal a { color: rgba(245,237,216,0.45); }
+
+    /* ── GREETING BAR ────────────────────────────────────────── */
+    .greeting-bar {
+      display: none;
+      background: rgba(201,168,76,0.08);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 0.45rem 1.5rem;
+      text-align: right;
+      position: relative;
+      z-index: 98;
+    }
+    .greeting-bar.visible { display: block; }
+    .greeting-text {
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+    }
+    .greeting-text span { color: var(--parchment); }
+
+    /* ── LOGIN SELECTS ───────────────────────────────────────── */
+    .login-field select {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 5px;
+      padding: 0.75rem 2.2rem 0.75rem 1rem;
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 1.05rem;
+      color: var(--parchment);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A84C' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.9rem center;
+      cursor: pointer;
+    }
+    .login-field select:focus {
+      border-color: rgba(201,168,76,0.6);
+      background-color: rgba(255,255,255,0.08);
+    }
+    .login-field select.error { border-color: var(--crimson-lt); }
+    .login-field select option {
+      background: #0B1F3A;
+      color: var(--parchment);
+    }
+    .login-field select option:disabled { color: rgba(245,237,216,0.3); }
+  </style>
+</head>
+<body>
+
+<div class="star-bg" aria-hidden="true"></div>
+<div class="stripes-top" aria-hidden="true"></div>
+
+<!-- GREETING BAR -->
+<div class="greeting-bar" id="greetingBar">
+  <span class="greeting-text">&#9733; Hi, <span id="greetingName"></span> &mdash; welcome back.</span>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="login-overlay" id="loginOverlay">
+  <div class="login-modal">
+    <p class="login-eyebrow">&#9733; National Day of Prayer &#9733;</p>
+    <h2 class="login-title">Join the<br><em>Prayer Campaign</em></h2>
+    <p class="login-subtitle">Enter your info to access 40 days of guided prayer for America &mdash; and receive your daily prayer reminder by text.</p>
+
+    <div class="login-row">
+      <div class="login-field">
+        <label for="loginFirst">First Name</label>
+        <input type="text" id="loginFirst" placeholder="John" autocomplete="given-name" />
+      </div>
+      <div class="login-field">
+        <label for="loginLast">Last Name</label>
+        <input type="text" id="loginLast" placeholder="Adams" autocomplete="family-name" />
+      </div>
+    </div>
+    <div class="login-field">
+      <label for="loginPhone">Mobile Number</label>
+      <input type="tel" id="loginPhone" placeholder="(555) 867-5309" autocomplete="tel" />
+    </div>
+    <div class="login-row">
+      <div class="login-field">
+        <label for="loginTimezone">Your Timezone</label>
+        <select id="loginTimezone">
+          <option value="" disabled selected>Select timezone</option>
+          <option value="ET">Eastern (ET)</option>
+          <option value="CT">Central (CT)</option>
+          <option value="MT">Mountain (MT)</option>
+          <option value="PT">Pacific (PT)</option>
+        </select>
+      </div>
+      <div class="login-field">
+        <label for="loginTime">Reminder Time</label>
+        <select id="loginTime">
+          <option value="" disabled selected>Select time</option>
+          <option value="7:00 AM">7:00 AM</option>
+          <option value="7:30 AM">7:30 AM</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="login-error-msg" id="loginError"></p>
+
+    <button class="login-submit" id="loginSubmit">
+      &#9733;&nbsp; Join &amp; Begin Praying
+    </button>
+
+    <p class="login-legal">
+      By submitting you agree to receive text messages from this ministry.
+      Message &amp; data rates may apply. Reply STOP to unsubscribe.
+    </p>
+  </div>
+</div>
+
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" data-page="home">&#9733; 40 Days of Prayer</a>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home" id="nav-home" class="active">Home</a></li>
+      <li><a href="#" data-page="schedule" id="nav-schedule">Prayer Schedule</a></li>
+      <li><a href="#" data-page="daily" id="nav-daily">Daily Prayers</a></li>
+      <li><a href="#" data-page="about" id="nav-about">About</a></li>
+      <li><a href="#" data-action="share" style="color:var(--crimson-lt)">&#9733; Share</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" data-action="menu" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" data-page="home">Home</a>
+    <a href="#" data-page="schedule">Prayer Schedule</a>
+    <a href="#" data-page="daily">Daily Prayers</a>
+    <a href="#" data-page="about">About</a>
+    <a href="#" data-action="share" style="color:var(--crimson-lt)">&#9733; Share This Campaign</a>
+  </div>
+</nav>
+
+<!-- APP -->
+<div id="app">
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+    <div class="hero">
+      <div class="torch-glow" aria-hidden="true"></div>
+      <p class="hero-eyebrow">National Day of Prayer Campaign</p>
+      <h1 class="hero-title">40 Days of<br><em>Prayer</em></h1>
+      <p class="hero-subtitle">for the Soul of America</p>
+      <div class="hero-divider"></div>
+      <p class="hero-verse">&#8220;If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven.&#8221;</p>
+      <p class="hero-verse-ref">&#8212; 2 Chronicles 7:14</p>
+      <div class="hero-cta-wrap">
+        <button class="btn btn-primary" data-page="daily">Begin Day 1 &#9733;</button>
+        <button class="btn btn-outline" data-page="schedule">View Schedule</button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><div class="scroll-arrow"></div></div>
+    </div>
+    <div class="counter-section">
+      <div class="container">
+        <p class="section-label" style="justify-content:center;margin-bottom:2rem"><span>&#9733;</span> The Campaign <span>&#9733;</span></p>
+        <div class="counter-grid">
+          <div class="counter-item"><div class="counter-num">40</div><div class="counter-label">Days of Prayer</div></div>
+          <div class="counter-sep">&#183;</div>
+          <div class="counter-item"><div class="counter-num">7</div><div class="counter-label">Weeks</div></div>
+          <div class="counter-sep">&#183;</div>
+          <div class="counter-item"><div class="counter-num">250</div><div class="counter-label">Years of America</div></div>
+          <div class="counter-sep">&#183;</div>
+          <div class="counter-item"><div class="counter-num">1</div><div class="counter-label">Nation Under God</div></div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <p class="section-label">Our Mission</p>
+        <h2 class="section-title">United in <span>Faith</span><br>for Our Nation</h2>
+        <p class="section-body">As America approaches its 250th anniversary, we are called to 40 days of unified, earnest prayer for our nation&#8217;s leaders, families, churches, and future. This campaign invites believers across every state, city, and community to lift their voices together before God in humble supplication and faithful intercession.</p>
+        <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <button class="btn btn-primary" data-page="schedule">View Full Schedule</button>
+          <button class="btn btn-outline" data-action="share">Share the Campaign</button>
+        </div>
+      </div>
+    </section>
+    <div class="quote-section">
+      <div class="quote-carousel">
+        <p class="section-label" style="justify-content:center;margin-bottom:1.5rem"><span>&#9733;</span> Founding Wisdom <span>&#9733;</span></p>
+        <blockquote>&#8220;It is the duty of all nations to acknowledge the Providence of Almighty God, to obey His will, to be grateful for His benefits, and humbly to implore His protection and favor.&#8221;</blockquote>
+        <cite>&#8212; George Washington, Thanksgiving Proclamation, 1789</cite>
+      </div>
+    </div>
+    <div class="stripe-accent"></div>
+    <section>
+      <div class="container">
+        <p class="section-label">How to Participate</p>
+        <h2 class="section-title">Three Pillars of the<br><span>40-Day Campaign</span></h2>
+        <div class="prayer-grid">
+          <div class="prayer-card"><div class="card-week">Pillar One</div><div class="card-days" style="font-size:2.5rem">&#128367;</div><div class="card-theme">Daily Prayer</div><div class="card-focus">Commit to a dedicated time each day to pray using our guided prayer focus. Even 10 minutes of intentional prayer moves mountains.</div><div class="card-verse">&#8220;Devote yourselves to prayer, being watchful and thankful.&#8221; &#8212; Col. 4:2</div></div>
+          <div class="prayer-card"><div class="card-week">Pillar Two</div><div class="card-days" style="font-size:2.5rem">&#128214;</div><div class="card-theme">Scripture &amp; Reflection</div><div class="card-focus">Each day features a key scripture and reflection question to anchor your prayer in God&#8217;s Word and align your heart with His purposes for America.</div><div class="card-verse">&#8220;Your word is a lamp to my feet and a light to my path.&#8221; &#8212; Ps. 119:105</div></div>
+          <div class="prayer-card"><div class="card-week">Pillar Three</div><div class="card-days" style="font-size:2.5rem">&#129309;</div><div class="card-theme">Community &amp; Sharing</div><div class="card-focus">Invite your church, family, and friends to join. The more voices united in prayer, the greater the spiritual movement across our land.</div><div class="card-verse">&#8220;Again, truly I tell you that if two of you on earth agree about anything&#8230;&#8221; &#8212; Mt. 18:19</div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SCHEDULE -->
+  <div class="page" id="page-schedule">
+    <section style="padding-top:4rem">
+      <div class="container">
+        <p class="section-label">40 Days of Prayer</p>
+        <h1 class="section-title">The <span>Prayer Schedule</span></h1>
+        <p class="section-body">Each week of our 40-day campaign focuses on a distinct theme &#8212; covering the full breadth of our nation&#8217;s spiritual, civic, and communal life.</p>
+        <div class="prayer-grid">
+          <div class="prayer-card"><div class="card-week">Week One &#183; Days 1&#8211;7</div><div class="card-days">Days<br>1&#8211;7</div><div class="card-theme">Repentance &amp; Renewal</div><div class="card-focus">Begin with humility. Pray for national repentance, personal renewal, and a return to the godly foundations upon which America was built.</div><div class="card-verse">&#8220;Return to me with all your heart.&#8221; &#8212; Joel 2:12</div></div>
+          <div class="prayer-card"><div class="card-week">Week Two &#183; Days 8&#8211;14</div><div class="card-days">Days<br>8&#8211;14</div><div class="card-theme">Government &amp; Leadership</div><div class="card-focus">Intercede for the President, Congress, the Supreme Court, governors, and all elected officials &#8212; that they would govern with wisdom, justice, and integrity.</div><div class="card-verse">&#8220;Blessed is the nation whose God is the Lord.&#8221; &#8212; Ps. 33:12</div></div>
+          <div class="prayer-card"><div class="card-week">Week Three &#183; Days 15&#8211;21</div><div class="card-days">Days<br>15&#8211;21</div><div class="card-theme">Family &amp; Communities</div><div class="card-focus">Pray for the restoration of the American family, strong marriages, children raised in faith, and communities bound together by love and shared values.</div><div class="card-verse">&#8220;As for me and my house, we will serve the Lord.&#8221; &#8212; Josh. 24:15</div></div>
+          <div class="prayer-card"><div class="card-week">Week Four &#183; Days 22&#8211;28</div><div class="card-days">Days<br>22&#8211;28</div><div class="card-theme">The Church in America</div><div class="card-focus">Intercede for the Body of Christ &#8212; for unity among believers, bold proclamation of the Gospel, and a great spiritual awakening across our nation.</div><div class="card-verse">&#8220;If my people&#8230; will humble themselves and pray.&#8221; &#8212; 2 Chron. 7:14</div></div>
+          <div class="prayer-card"><div class="card-week">Week Five &#183; Days 29&#8211;35</div><div class="card-days">Days<br>29&#8211;35</div><div class="card-theme">Education &amp; Youth</div><div class="card-focus">Pray for students, teachers, universities, and the rising generation &#8212; that truth would prevail and young Americans would be formed in wisdom and character.</div><div class="card-verse">&#8220;Train up a child in the way he should go.&#8221; &#8212; Prov. 22:6</div></div>
+          <div class="prayer-card"><div class="card-week">Week Six &amp; Day 40</div><div class="card-days">Days<br>36&#8211;40</div><div class="card-theme">Revival &amp; America&#8217;s Future</div><div class="card-focus">Conclude with prayers of faith and declaration. Ask God for a sweeping spiritual revival, national healing, and His blessing on America&#8217;s next 250 years.</div><div class="card-verse">&#8220;He makes nations great, and destroys them.&#8221; &#8212; Job 12:23</div></div>
+        </div>
+      </div>
+    </section>
+    <div class="quote-section">
+      <div class="quote-carousel">
+        <blockquote>&#8220;Providence has given our people the choice of their rulers, and it is the duty &#8212; as well as the privilege and interest &#8212; of our Christian nation to select and prefer Christians for their rulers.&#8221;</blockquote>
+        <cite>&#8212; John Jay, First Chief Justice of the United States</cite>
+      </div>
+    </div>
+    <div style="padding:2rem 1.5rem 4rem;text-align:center">
+      <button class="btn btn-primary" data-page="daily" style="margin:0 auto">Start Daily Prayers &#9733;</button>
+    </div>
+  </div>
+
+  <!-- DAILY PRAYER -->
+  <div class="page" id="page-daily">
+    <section style="padding-top:4rem">
+      <div class="container">
+        <p class="section-label">Guided Intercession</p>
+        <h1 class="section-title">Daily <span>Prayer Guide</span></h1>
+        <p class="section-body">Select a day below to receive your guided prayer, scripture anchor, and intercession points for that day of the campaign.</p>
+        <div class="day-selector">
+          <div class="day-tabs" id="dayTabs"></div>
+          <div class="prayer-content" id="prayerContent"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="page" id="page-about">
+    <div class="about-hero">
+      <div class="about-seal">&#127985;</div>
+      <h1>About <em>the National<br>Day of Prayer</em></h1>
+      <p>A sacred tradition rooted in America&#8217;s founding &#8212; now more vital than ever as our nation approaches its 250th year.</p>
+    </div>
+    <div class="about-content">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>What Is the <span>National Day of Prayer?</span></h2>
+          <p>The National Day of Prayer is an annual observance held on the first Thursday of May, inviting people of all faiths to pray for the nation. Established by a joint resolution of Congress and signed into law by President Harry S. Truman in 1952, the National Day of Prayer has been a cornerstone of America&#8217;s civic and spiritual life for over seven decades.</p>
+          <p>The tradition of national prayer far predates even the 1952 law. The Continental Congress called for prayer during the Revolutionary War. President Abraham Lincoln proclaimed a day of fasting and prayer during the Civil War, acknowledging that the nation had &#8220;forgotten God&#8221; and needed His mercy. George Washington, John Adams, and James Madison all issued presidential proclamations calling the American people to prayer.</p>
+          <p>This 40-day campaign takes the spirit of the National Day of Prayer and extends it into a sustained, focused season of intercession &#8212; asking God to bless, heal, and guide our nation at a pivotal moment in history.</p>
+          <h2 style="margin-top:2.5rem">America&#8217;s <span>250th Anniversary</span></h2>
+          <p>In 2026, the United States of America celebrates its 250th birthday &#8212; the Semiquincentennial. From the signing of the Declaration of Independence on July 4, 1776, to the present day, this nation has been shaped by its people&#8217;s faith, sacrifice, and commitment to liberty and justice for all.</p>
+          <p>As we mark this extraordinary milestone, we are called not merely to celebrate, but to reflect and pray. The Founders acknowledged dependence upon Divine Providence. It is fitting &#8212; and urgent &#8212; that we do the same as we enter America&#8217;s next chapter.</p>
+          <h2 style="margin-top:2.5rem">A <span>Call to Action</span></h2>
+          <p>America stands at a crossroads. The challenges facing our nation &#8212; political division, cultural upheaval, moral drift, and spiritual decline &#8212; are not solved by policy alone. They require the intervention of God Himself, invited by the humble, persistent prayers of His people.</p>
+          <p>We invite you: <strong style="color:var(--gold)">pray for America.</strong> Pray for its leaders. Pray for its families and churches. Pray for the 250 years still to come. Join believers from every corner of this great land in lifting our nation before the throne of Almighty God &#8212; that He would hear from heaven, forgive our sin, and heal our land.</p>
+        </div>
+        <div>
+          <div class="anniversary-box">
+            <div class="anniversary-num">&#10022; 250 &#10022;</div>
+            <div class="anniversary-label">Years of the United States of America</div>
+            <div class="anniversary-divider"></div>
+            <blockquote style="padding:0;font-size:.98rem">&#8220;Our Constitution was made only for a moral and religious people. It is wholly inadequate to the government of any other.&#8221;<footer style="font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-top:.8rem;font-style:normal">&#8212; John Adams</footer></blockquote>
+            <div class="anniversary-divider"></div>
+            <p class="card-week" style="margin-bottom:.8rem">July 4, 1776 &#8594; July 4, 2026</p>
+            <p style="font-size:.95rem;color:rgba(245,237,216,.65);line-height:1.65">A quarter-millennium of liberty, forged by faith and sacrifice. As we celebrate this extraordinary milestone, let us covenant to seek God&#8217;s face for the next 250 years.</p>
+            <div style="margin-top:1.5rem">
+              <button class="btn btn-primary" data-action="share" style="width:100%;justify-content:center">Share This Campaign</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <p class="section-label" style="max-width:720px;margin:0 auto 1.5rem">The Proclamation</p>
+        <div class="proclamation">
+          <p><strong style="color:var(--gold)">We, the people of faith across these United States,</strong> do hereby covenant together before Almighty God to devote the next forty days to earnest, united prayer for this nation &#8212; her leaders, her families, her churches, and her future.</p>
+          <p>Acknowledging that we are &#8220;one nation under God,&#8221; we humble ourselves and seek His face. We confess that as a nation we have strayed from His ways. We ask for His mercy, His healing, and His guidance as America marks 250 years of liberty and looks toward centuries yet to come.</p>
+          <p>We believe that &#8220;the effectual fervent prayer of a righteous person availeth much&#8221; (James 5:16), and that God still hears the prayers of His people. We stand upon His promise: &#8220;If my people, who are called by my name, will humble themselves and pray&#8230; I will hear from heaven, and I will forgive their sin and will heal their land&#8221; (2 Chronicles 7:14).</p>
+          <p><em>Therefore, we pray. For America. For liberty. For righteousness. For the glory of God.</em></p>
+        </div>
+      </div>
+    </section>
+    <div class="cta-banner">
+      <h2>Join Millions Praying for America</h2>
+      <p>Share this 40-day prayer campaign with your church, your family, and your community. Every voice matters. Every prayer counts.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-outline" style="border-color:rgba(255,255,255,.7);color:white" data-action="share">&#9733; Share the Campaign</button>
+        <button class="btn" style="background:rgba(255,255,255,.15);color:white" data-page="daily">Begin Praying Today</button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /app -->
+
+
+<!-- SPONSOR FOOTER -->
+<footer class="sponsor-footer">
+  <div class="sponsor-footer-inner">
+    <div class="sponsor-footer-left">
+      <span class="sponsor-footer-label">Campaign Sponsor</span>
+      <span class="sponsor-footer-motto">&#8220;Cultivating connections that create infinite impact.&#8221;</span>
+    </div>
+    <div class="sponsor-footer-logo">
+      <a href="https://poweredbytext.com" target="_blank" rel="noopener" aria-label="Powered By Text">
+        <img src="./powered-by-text-logo.png" alt="Powered By Text" class="sponsor-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" /><span style="display:none;font-family:'Cinzel',serif;font-size:0.9rem;font-weight:700;color:#00C853;letter-spacing:0.1em;">POWERED BY TEXT</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB -->
+<button class="fab-share" data-action="share" aria-label="Share">&#8593; Share</button>
+
+<!-- SHARE MODAL -->
+<div class="share-overlay" id="shareOverlay" data-action="overlayclose">
+  <div class="share-modal">
+    <button class="share-close" data-action="closeshare" aria-label="Close">&#10005;</button>
+    <h3>Spread the Prayer</h3>
+    <p>Help us reach more believers across America. Share this 40-day prayer campaign with your network.</p>
+    <div class="share-buttons">
+      <button class="share-btn share-btn-sms" data-action="sms">&#128172; Text a Friend</button>
+      <a class="share-btn share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://40daysprayer.org" target="_blank" rel="noopener">f&nbsp; Facebook</a>
+      <a class="share-btn share-btn-twitter" href="https://twitter.com/intent/tweet?text=Join%20me%20in%2040%20days%20of%20prayer%20for%20America!%20%23NationalDayOfPrayer%20%23PrayForAmerica&url=https://40daysprayer.org" target="_blank" rel="noopener">&#120143;&nbsp; Twitter / X</a>
+      <a class="share-btn share-btn-email" href="/cdn-cgi/l/email-protection#6b54181e09010e081f56210402054e595b260e4e595b02054e595b5f5b4e595b2f0a12184e595b040d4e595b3b190a120e194e595b0d04194e595b2a060e1902080a4d09040f1256230e124a4e595b224e595b1c0a051f0e0f4e595b1f044e595b02051d021f0e4e595b12041e4e595b1f044e595b010402054e595b5f5b4e595b2f0a12184e595b040d4e595b3b190a120e194e595b0d04194e595b2a060e1902080a4a4e5b2a4e5b2a2a184e595b041e194e595b050a1f0204054e595b060a1900184e595b595e5b4e595b120e0a19184e59284e595b070e1f4e595c184e595b1b190a124e595b1f040c0e1f030e194e595b0d04194e595b190e1d021d0a074e595b0a050f4e595b030e0a0702050c454e5b2a4e5b2a3d0218021f4e582a4e595b031f1f1b184e582a4e592d4e592d5f5b0f0a12181b190a120e194504190c4e5b2a4e5b2a4e5958250a1f0204050a072f0a12240d3b190a120e194e595b4e59583b190a122d04192a060e1902080a">&#9993;&nbsp; Send Email</a>
+      <button class="share-btn share-btn-copy" data-action="copy">&#8967; Copy Link</button>
+    </div>
+    <div class="share-url-box">
+      <input type="text" value="https://40daysprayer.org" readonly id="shareUrl" />
+      <button id="copyBtn" data-action="copy">Copy</button>
+    </div>
+    <p style="font-size:.78rem;text-align:center;color:rgba(245,237,216,.3);margin-top:1rem">#NationalDayOfPrayer &#183; #PrayForAmerica &#183; #40DaysOfPrayer</p>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">Link copied!</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function() {
+  // ── PRAYER DATA ──────────────────────────────────────────────────────────
+  var prayers = [
+    {day:1,week:"Week 1 · Repentance & Renewal",title:"Humility Before God",verse:"'Humble yourselves before the Lord, and He will lift you up.' — James 4:10",points:["Confess personal and national sins before God in humility and sincerity.","Pray for a spirit of true repentance to sweep across America — from the highest offices to every home.","Ask God to heal the wounds of pride, self-reliance, and forgetting our Creator.","Declare America's need for God, that without Him our strength is nothing."]},
+    {day:2,week:"Week 1 · Repentance & Renewal",title:"Seeking God's Face",verse:"'Seek the Lord while He may be found; call upon Him while He is near.' — Isaiah 55:6",points:["Pray for a national turning toward God — not just in crisis, but in daily life.","Intercede for hearts that have grown cold or indifferent to be warmed by the Holy Spirit.","Ask God to awaken a hunger and thirst for righteousness in this generation.","Pray that America would seek God's will above political gain and self-interest."]},
+    {day:3,week:"Week 1 · Repentance & Renewal",title:"The Founding Covenant",verse:"'Blessed is the nation whose God is the Lord.' — Psalm 33:12",points:["Thank God for the faith of the Founders who acknowledged Divine Providence.","Pray that America would return to its founding covenant of dependence on God.","Intercede that revisionist history would be exposed, and true history preserved.","Ask God to raise up leaders today with the faith and courage of Washington, Lincoln, and Adams."]},
+    {day:4,week:"Week 1 · Repentance & Renewal",title:"Forgiveness & Healing",verse:"'If we confess our sins, He is faithful and just to forgive us.' — 1 John 1:9",points:["Pray for God's forgiveness over the sins of our nation — past and present.","Intercede for racial and social healing — true reconciliation grounded in Christ.","Ask God to heal divisions in families, communities, and across party lines.","Declare God's promise: He who heals the brokenhearted also heals broken nations."]},
+    {day:5,week:"Week 1 · Repentance & Renewal",title:"A Spirit of Revival",verse:"'Will you not revive us again, that your people may rejoice in you?' — Psalm 85:6",points:["Cry out to God for a great awakening — greater than any seen in American history.","Pray for the Holy Spirit to move mightily in our churches, cities, and campuses.","Intercede for revival to break out in unexpected places: prisons, hospitals, stadiums.","Ask God to use this 40-day prayer campaign as a spark for nationwide renewal."]},
+    {day:6,week:"Week 1 · Repentance & Renewal",title:"Truth Over Deception",verse:"'You shall know the truth, and the truth shall set you free.' — John 8:32",points:["Pray for the spirit of truth to prevail in media, government, and the courts.","Intercede against deception, propaganda, and the manipulation of public opinion.","Ask God to raise up men and women of integrity who speak truth without fear.","Pray for discernment for the American people to know truth from falsehood."]},
+    {day:7,week:"Week 1 · Repentance & Renewal",title:"The Fear of the Lord",verse:"'The fear of the Lord is the beginning of wisdom.' — Proverbs 9:10",points:["Pray that a holy reverence for God would return to American culture.","Intercede for our nation to acknowledge that we are accountable to the God who made us.","Ask God to replace the spirit of lawlessness with a spirit of godly wisdom.","Pray for the Church to model lives of reverence, sobriety, and devotion."]},
+    {day:8,week:"Week 2 · Government & Leadership",title:"The President & Administration",verse:"'I urge that prayers be made for kings and all those in authority.' — 1 Tim. 2:1-2",points:["Pray for the President and Cabinet — for wisdom, humility, and justice in every decision.","Ask God to surround national leaders with godly counsel and to remove corrupt advisors.","Intercede for protection over the President and all national officials.","Pray that God's will — not partisan agendas — would drive governance."]},
+    {day:9,week:"Week 2 · Government & Leadership",title:"The United States Congress",verse:"'Righteousness exalts a nation, but sin condemns any people.' — Proverbs 14:34",points:["Pray for Senators and Representatives to legislate with wisdom and moral courage.","Intercede against corruption, bribery, and self-serving politics in Congress.","Ask God to give legislators a true heart for the good of all Americans, not just donors.","Pray for unity where unity serves justice, and courage to stand firm where it matters."]},
+    {day:10,week:"Week 2 · Government & Leadership",title:"The Supreme Court & Judiciary",verse:"'He has told you, O man, what is good; and what does the Lord require...' — Micah 6:8",points:["Pray for justices and judges to rule with impartiality, wisdom, and moral clarity.","Intercede for the rule of law — that justice would not be manipulated by ideology.","Ask God to protect the Constitution and the liberties it enshrines.","Pray for court systems at every level — federal, state, and local."]},
+    {day:11,week:"Week 2 · Government & Leadership",title:"Governors & State Legislatures",verse:"'When the righteous are in authority, the people rejoice.' — Proverbs 29:2",points:["Pray for all 50 governors — for integrity, wisdom, and servant leadership.","Intercede for state legislatures to pass laws that protect life, family, and freedom.","Ask God to bring revival in state capitols where faith has been marginalized.","Pray for a new generation of righteous leaders to rise in every state."]},
+    {day:12,week:"Week 2 · Government & Leadership",title:"Military & Defense",verse:"'The Lord is my strength and my shield; in Him my heart trusts.' — Psalm 28:7",points:["Thank God for those who serve in uniform — Army, Navy, Air Force, Marines, Coast Guard, Space Force.","Pray for the safety and spiritual well-being of every deployed servicemember.","Intercede for military leadership to be guided by wisdom and not political pressure.","Ask God to protect America from all foreign enemies, seen and unseen."]},
+    {day:13,week:"Week 2 · Government & Leadership",title:"Law Enforcement & First Responders",verse:"'He is God's servant for your good.' — Romans 13:4",points:["Pray for police officers, firefighters, paramedics, and all who risk their lives daily.","Intercede for wisdom in law enforcement and protection from violence and harm.","Ask God to heal the rifts between communities and those sworn to protect them.","Pray for true justice in our legal system — no racism, no favoritism, no corruption."]},
+    {day:14,week:"Week 2 · Government & Leadership",title:"Freedom of Religion & Speech",verse:"'Stand firm in the freedom with which Christ has set us free.' — Galatians 5:1",points:["Pray for the First Amendment freedoms to be defended and upheld at every level.","Intercede for Christians who face censorship, discrimination, or legal intimidation for their faith.","Ask God to protect the freedom to pray, preach, and live out the Gospel publicly.","Pray that America would remain a land of true liberty — for all people of faith."]},
+    {day:15,week:"Week 3 · Family & Communities",title:"The American Family",verse:"'As for me and my house, we will serve the Lord.' — Joshua 24:15",points:["Pray for marriages to be strengthened and protected across America.","Intercede for fathers to return to their families and take up their God-given role.","Ask God to restore the family as the foundational unit of a healthy society.","Pray for children to be raised in love, faith, and the knowledge of Scripture."]},
+    {day:16,week:"Week 3 · Family & Communities",title:"Children & Youth",verse:"'Train up a child in the way he should go.' — Proverbs 22:6",points:["Pray for every child in America to have at least one adult praying over them.","Intercede against the forces that corrupt, abuse, and exploit children.","Ask God to protect young people from addiction, despair, and destructive ideologies.","Pray for a generation of young Americans who rise up to love God and serve their country."]},
+    {day:17,week:"Week 3 · Family & Communities",title:"Marriages",verse:"'What God has joined together, let no one separate.' — Matthew 19:6",points:["Pray for married couples facing hardship — financial stress, conflict, or betrayal.","Intercede for pre-marital couples to build their relationships on godly foundations.","Ask God to lower divorce rates and restore covenant love in struggling marriages.","Pray for Christian marriages to be a light and witness in their communities."]},
+    {day:18,week:"Week 3 · Family & Communities",title:"Single Parents & Vulnerable Families",verse:"'He defends the cause of the fatherless and the widow.' — Deuteronomy 10:18",points:["Pray for single mothers and fathers — for supernatural strength, provision, and joy.","Intercede for orphans and foster children to find safe, loving families.","Ask God to move the Church to step up as a tangible support network for the vulnerable.","Pray for compassionate government policies that strengthen, not undermine, families."]},
+    {day:19,week:"Week 3 · Family & Communities",title:"Cities & Urban Communities",verse:"'Seek the welfare of the city... pray to the Lord on its behalf.' — Jeremiah 29:7",points:["Pray for America's major cities — for peace, safety, economic opportunity, and revival.","Intercede against gang violence, drug trafficking, and systemic poverty in urban areas.","Ask God to raise up local leaders with a vision for community transformation.","Pray for the churches in cities to be powerhouses of mission and mercy."]},
+    {day:20,week:"Week 3 · Family & Communities",title:"Rural America & Small Towns",verse:"'The Lord watches over all who love him.' — Psalm 145:20",points:["Pray for farming communities facing economic hardship and cultural marginalization.","Intercede for small towns struggling with population decline and loss of hope.","Ask God to bring economic revival and community renewal to rural America.","Pray for small-town churches to be beacons of hope and anchors of community life."]},
+    {day:21,week:"Week 3 · Family & Communities",title:"Racial Reconciliation & Unity",verse:"'There is neither Jew nor Greek... for you are all one in Christ Jesus.' — Gal. 3:28",points:["Pray for genuine racial reconciliation in the American Church and in society.","Intercede against the spirits of hatred, prejudice, and tribalism that divide us.","Ask God to raise up leaders from every ethnic background to model unity in Christ.","Pray that the American Church leads the way in demonstrating reconciled community."]},
+    {day:22,week:"Week 4 · The Church in America",title:"The Body of Christ in America",verse:"'That they may all be one... so the world may believe.' — John 17:21",points:["Pray for the unity of the Church across denominations and theological traditions.","Intercede for pride, competition, and division among churches to give way to love.","Ask God to move the Body of Christ to speak with one voice on moral and spiritual issues.","Pray for the American Church to be a light — not a mirror — to the culture."]},
+    {day:23,week:"Week 4 · The Church in America",title:"Pastors & Church Leaders",verse:"'Shepherd the flock of God that is among you.' — 1 Peter 5:2",points:["Pray for pastors to have courage to preach the whole counsel of God's Word.","Intercede for protection over pastors and their families from spiritual attack.","Ask God to guard church leaders from moral failure, burnout, and discouragement.","Pray for a generation of bold, humble, Spirit-filled leaders to rise across America."]},
+    {day:24,week:"Week 4 · The Church in America",title:"Spiritual Awakening",verse:"'The harvest is plentiful but the workers are few.' — Matthew 9:37",points:["Cry out to God for a Third Great Awakening across America.","Pray for mass evangelism movements, open-air preaching, and campus revivals.","Intercede for the Gospel to reach the unreached — the unchurched millions of America.","Ask God to do what no political platform or social program can: transform hearts."]},
+    {day:25,week:"Week 4 · The Church in America",title:"Worship & Prayer Movements",verse:"'Will not God bring about justice for His chosen ones, who cry to Him day and night?' — Luke 18:7",points:["Pray for houses of prayer, 24/7 prayer rooms, and prayer movements across the nation.","Intercede for worship to go deeper — not as entertainment but as genuine encounter with God.","Ask God to raise up intercessors in every city willing to pray without ceasing.","Pray that this 40-day campaign sparks a permanent culture of prayer in American churches."]},
+    {day:26,week:"Week 4 · The Church in America",title:"Christian Media & Broadcasting",verse:"'How beautiful are the feet of those who bring good news.' — Romans 10:15",points:["Pray for Christian radio, television, and online ministries to reach millions with the Gospel.","Intercede for integrity in Christian media — truth over ratings and profit.","Ask God to anoint the message being broadcast so that it transforms listeners.","Pray for this prayer campaign and broadcast ministry to reach every household in America."]},
+    {day:27,week:"Week 4 · The Church in America",title:"Missionaries & Global Impact",verse:"'Go into all the world and preach the gospel to all creation.' — Mark 16:15",points:["Pray for American missionaries serving on every continent — for safety and effectiveness.","Intercede for the nations most hostile to the Gospel to be opened to the message of Christ.","Ask God to use the American Church as a sending force for global evangelism.","Pray for the persecuted Church worldwide — for endurance, provision, and courage."]},
+    {day:28,week:"Week 4 · The Church in America",title:"The Next Generation of Believers",verse:"'Even when I am old and gray, do not forsake me, my God.' — Psalm 71:18",points:["Pray for young adults leaving the Church to return to the faith of their childhood.","Intercede for youth ministries, college campus fellowships, and Sunday schools.","Ask God to make the faith compelling, real, and transformative for the next generation.","Pray for godly mentors to invest in young believers across America."]},
+    {day:29,week:"Week 5 · Education & Youth",title:"Public Schools",verse:"'Let your light shine before others.' — Matthew 5:16",points:["Pray for Christian teachers in public schools — for courage, wisdom, and favor.","Intercede against harmful ideologies being taught to children without parental consent.","Ask God to protect children's hearts and minds in the public school system.","Pray for administrators and school boards to govern with wisdom and integrity."]},
+    {day:30,week:"Week 5 · Education & Youth",title:"Christian Schools & Homeschooling",verse:"'These commandments... impress them on your children.' — Deuteronomy 6:6-7",points:["Thank God for parents who make sacrifices to give their children a Christian education.","Pray for Christian schools to maintain academic excellence and spiritual vitality.","Intercede for homeschool families — for resources, community, and encouragement.","Ask God to raise up an educated, morally grounded generation of American leaders."]},
+    {day:31,week:"Week 5 · Education & Youth",title:"Colleges & Universities",verse:"'Knowledge puffs up while love builds up.' — 1 Corinthians 8:1",points:["Pray for Christian students on secular campuses to stand firm in their faith.","Intercede for professors who teach against God and the truth of Scripture.","Ask God for revival on college campuses — as in the Jesus Movement of the 1970s.","Pray for campus ministries to thrive and multiply."]},
+    {day:32,week:"Week 5 · Education & Youth",title:"Teachers & Educators",verse:"'The wise woman builds her house.' — Proverbs 14:1",points:["Honor and pray for the millions of educators who dedicate their lives to young people.","Intercede for teachers facing burnout, hostile environments, and political pressure.","Ask God to restore respect and dignity to the teaching profession.","Pray for Christian teachers to be mentors and spiritual influences in young lives."]},
+    {day:33,week:"Week 5 · Education & Youth",title:"Youth Culture & Media",verse:"'Do not conform to the pattern of this world, but be transformed.' — Romans 12:2",points:["Pray against cultural messages that push young people toward despair and rebellion.","Intercede for healthy uses of technology and social media among American youth.","Ask God to break the grip of pornography, substance abuse, and nihilism on this generation.","Pray for Christian artists and content creators to fill culture with truth and beauty."]},
+    {day:34,week:"Week 5 · Education & Youth",title:"Mental Health & Youth Despair",verse:"'Come to me, all you who are weary and burdened, and I will give you rest.' — Matt. 11:28",points:["Pray for the mental health crisis among American youth — anxiety, depression, and suicide.","Intercede for every teenager or young adult struggling in darkness to find the light of Christ.","Ask God to work through counselors, youth pastors, and parents to bring healing.","Pray for the church to be a safe place for those struggling with mental health challenges."]},
+    {day:35,week:"Week 5 · Education & Youth",title:"Children in Poverty",verse:"'Speak up for those who cannot speak for themselves.' — Proverbs 31:8",points:["Pray for the millions of American children who go to bed hungry tonight.","Intercede for food banks, after-school programs, and ministries serving impoverished kids.","Ask God to move hearts and mobilize the Church to be a practical answer to child poverty.","Pray for policy solutions that truly lift families out of poverty and restore dignity."]},
+    {day:36,week:"Week 6 · Revival & America's Future",title:"America's History & Heritage",verse:"'Remember the former things, those of long ago.' — Isaiah 46:9",points:["Thank God for the providential hand He has shown throughout American history.","Pray for Americans to have a truthful and grateful understanding of their history.","Intercede for the preservation of monuments, traditions, and civic memory.","Ask God to help this generation build wisely on the foundation laid by those before us."]},
+    {day:37,week:"Week 6 · Revival & America's Future",title:"Economy & Provision",verse:"'You shall remember the Lord your God, for it is He who gives you power to get wealth.' — Deut. 8:18",points:["Pray for economic wisdom in government — for just fiscal policy and protection of workers.","Intercede for those struggling with poverty, debt, and unemployment in America.","Ask God to bless honest work and punish corruption and exploitation.","Pray for business leaders to lead with integrity and care for their communities."]},
+    {day:38,week:"Week 6 · Revival & America's Future",title:"A Culture of Life",verse:"'I have set before you life and death, blessings and curses. Now choose life.' — Deut. 30:19",points:["Pray for the protection of human life — from conception to natural death.","Intercede for post-abortive women and men to find healing and forgiveness in Christ.","Ask God to raise up a culture that values, protects, and celebrates every human life.","Pray for the elderly, disabled, and marginalized to be treated with dignity and love."]},
+    {day:39,week:"Week 6 · Revival & America's Future",title:"National Healing & Unity",verse:"'How good and pleasant it is when God's people live together in unity.' — Psalm 133:1",points:["Pray for the deep divisions in America — political, racial, generational — to be healed.","Intercede for a spirit of civility, mutual respect, and good-faith engagement to return.","Ask God to silence the voices of hatred and replace them with voices of reconciliation.","Pray that the 250th anniversary would be a moment of genuine national renewal."]},
+    {day:40,week:"Week 6 · Revival & America's Future",title:"America's Next 250 Years",verse:"'For I know the plans I have for you, declares the Lord, plans to prosper you.' — Jer. 29:11",points:["Give God thanks for 250 years of American liberty, and ask Him for 250 more of righteousness.","Intercede for the generation being born today — that they would inherit a nation under God.","Ask God to pour out His Spirit on America in a final, great harvest before Christ's return.","Declare in faith: God is not done with America. The best days are ahead — for His glory!"]}
+  ];
+
+  // ── PAGE NAVIGATION ───────────────────────────────────────────────────────
+  function showPage(id) {
+    var pages = document.querySelectorAll('.page');
+    for (var i = 0; i < pages.length; i++) pages[i].classList.remove('active');
+    var navLinks = document.querySelectorAll('.nav-links a');
+    for (var i = 0; i < navLinks.length; i++) navLinks[i].classList.remove('active');
+    var page = document.getElementById('page-' + id);
+    if (page) page.classList.add('active');
+    var navLink = document.getElementById('nav-' + id);
+    if (navLink) navLink.classList.add('active');
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  function toggleMobile() {
+    var menu = document.getElementById('mobileMenu');
+    if (menu) menu.classList.toggle('open');
+  }
+
+  // ── DAILY PRAYER ──────────────────────────────────────────────────────────
+  function selectDay(n) {
+    var tabs = document.querySelectorAll('.day-tab');
+    for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove('selected');
+    var tab = document.getElementById('tab-' + n);
+    if (tab) {
+      tab.classList.add('selected');
+      tab.scrollIntoView({block: 'nearest', inline: 'center', behavior: 'smooth'});
+    }
+    renderDay(n);
+  }
+
+  // ── I PRAYED LOGIC (Firebase Realtime Database) ──────────────────────
+  //
+  // SETUP: Replace the four YOUR_... values below with your Firebase config.
+  // Get them from: Firebase Console → Project Settings → Your Apps → Web App
+  //
+  var FB_API_KEY        = 'AIzaSyBVxUcGAsCtl7lNQsqrqJGh6Epe3pwdopU';
+  var FB_DATABASE_URL   = 'https://national-day-of-prayer-d0a9d-default-rtdb.firebaseio.com'; // e.g. https://your-project-default-rtdb.firebaseio.com
+  var FB_PROJECT_ID     = 'national-day-of-prayer-d0a9d';
+  var FB_APP_ID         = '1:857480636557:web:40f5ba31c1bd5ae0a39ac4';
+
+  // Firebase REST base — no SDK needed, plain fetch calls
+  var FB_DB = FB_DATABASE_URL + '/prayerCounts';
+
+  function todayStr() {
+    var d = new Date();
+    return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+  }
+
+  function lsKey(day) {
+    return 'prayed_day' + day + '_' + todayStr();
+  }
+
+  function hasPlayedToday(day) {
+    try { return !!localStorage.getItem(lsKey(day)); } catch(e) { return false; }
+  }
+
+  function markPrayedToday(day) {
+    try { localStorage.setItem(lsKey(day), '1'); } catch(e) {}
+  }
+
+  // Read count once on page load
+  function fetchCount(day, cb) {
+    fetch(FB_DB + '/day' + day + '.json')
+      .then(function(r) { return r.json(); })
+      .then(function(val) { cb(typeof val === 'number' ? val : 0); })
+      .catch(function() { cb(0); });
+  }
+
+  // Atomic increment using Firebase transaction via REST
+  function incrementCount(day, cb) {
+    var url = FB_DB + '/day' + day + '.json';
+    // Read current value first, then write +1
+    fetch(url)
+      .then(function(r) { return r.json(); })
+      .then(function(current) {
+        var next = (typeof current === 'number' ? current : 0) + 1;
+        return fetch(url, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(next)
+        }).then(function(r) { return r.json(); });
+      })
+      .then(function(saved) { cb(typeof saved === 'number' ? saved : 0); })
+      .catch(function() { cb(null); });
+  }
+
+  // Poll for updates every 10 seconds — no persistent connection needed
+  function subscribeCount(day) {
+    // Clear any existing poll interval when switching days
+    if (window._prayerPoll) clearInterval(window._prayerPoll);
+    window._prayerPollDay = day;
+    window._prayerPoll = setInterval(function() {
+      // Only poll if we're still on the same day
+      if (window._prayerPollDay !== day) return;
+      fetchCount(day, function(val) { updateCountDisplay(day, val); });
+    }, 30000); // every 30 seconds
+  }
+
+  function updateCountDisplay(day, val) {
+    var el = document.getElementById('prayed-count-' + day);
+    if (!el) return;
+    el.textContent = (typeof val === 'number') ? val.toLocaleString() : '0';
+  }
+
+  function handlePrayedClick(day) {
+    if (hasPlayedToday(day)) return;
+    var btn = document.getElementById('prayed-btn-' + day);
+    if (btn) btn.disabled = true;
+
+    incrementCount(day, function(val) {
+      markPrayedToday(day);
+      if (val !== null) updateCountDisplay(day, val);
+      renderPrayedState(day, true, val);
+      var countEl = document.getElementById('prayed-count-' + day);
+      if (countEl) {
+        countEl.classList.remove('prayed-pop');
+        void countEl.offsetWidth;
+        countEl.classList.add('prayed-pop');
+      }
+    });
+  }
+
+  function renderPrayedState(day, done, count) {
+    var btn = document.getElementById('prayed-btn-' + day);
+    var alreadyEl = document.getElementById('prayed-already-' + day);
+    if (!btn) return;
+
+    if (done) {
+      btn.disabled = true;
+      btn.classList.add('prayed-done');
+      btn.innerHTML = '<span class="prayed-icon">&#10003;</span> Prayed Today';
+      if (alreadyEl) alreadyEl.style.display = 'block';
+    }
+  }
+
+  function renderDay(n) {
+    var d = prayers[n - 1];
+    if (!d) return;
+    var el = document.getElementById('prayerContent');
+    if (!el) return;
+    var pts = '';
+    for (var i = 0; i < d.points.length; i++) pts += '<li>' + d.points[i] + '</li>';
+
+    var alreadyMsg = hasPlayedToday(n)
+      ? 'block'
+      : 'none';
+    var btnClass = hasPlayedToday(n)
+      ? 'prayed-btn prayed-done'
+      : 'prayed-btn';
+    var btnLabel = hasPlayedToday(n)
+      ? '<span class="prayed-icon">&#10003;</span> Prayed Today'
+      : '<span class="prayed-icon">&#x1F64F;</span> I Prayed';
+    var btnDisabled = hasPlayedToday(n) ? ' disabled' : '';
+
+    el.innerHTML =
+      '<p class="prayer-day-num">' + d.week + '</p>' +
+      '<h2 class="prayer-day-title">Day ' + d.day + ': ' + d.title + '</h2>' +
+      '<p class="prayer-scripture">' + d.verse + '</p>' +
+      '<div class="prayer-points"><h4>Prayer Points for Today</h4><ul>' + pts + '</ul></div>' +
+      '<div class="prayed-section">' +
+        '<div class="prayed-count-wrap">' +
+          '<span class="prayed-count" id="prayed-count-' + n + '">&#8230;</span>' +
+          '<span class="prayed-count-label">People Prayed This Prayer</span>' +
+        '</div>' +
+        '<p class="prayed-label">Did you complete this prayer?</p>' +
+        '<button class="' + btnClass + '" id="prayed-btn-' + n + '"' + btnDisabled + ' data-prayedday="' + n + '">' +
+          btnLabel +
+        '</button>' +
+        '<span class="prayed-already" id="prayed-already-' + n + '" style="display:' + alreadyMsg + '">' +
+          '&#10003; You prayed this today. Come back tomorrow for the next day.' +
+        '</span>' +
+      '</div>';
+
+    // fetch count + subscribe to real-time updates
+    fetchCount(n, function(val) { updateCountDisplay(n, val); });
+    subscribeCount(n);
+  }
+
+  function buildDailyPrayer() {
+    var tabsEl = document.getElementById('dayTabs');
+    if (!tabsEl) return;
+    var html = '';
+    for (var i = 1; i <= 40; i++) {
+      html += '<button class="day-tab' + (i === 1 ? ' selected' : '') +
+              '" data-day="' + i + '" id="tab-' + i + '">Day ' + i + '</button>';
+    }
+    tabsEl.innerHTML = html;
+    renderDay(1);
+  }
+
+  // ── SHARE MODAL ───────────────────────────────────────────────────────────
+  function openShare() {
+    var overlay = document.getElementById('shareOverlay');
+    if (overlay) { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  }
+
+  function closeShare() {
+    var overlay = document.getElementById('shareOverlay');
+    if (overlay) { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+  }
+
+  function closeShareOnOverlay(e) {
+    if (e.target === document.getElementById('shareOverlay')) closeShare();
+  }
+
+  function openSMS() {
+    var msg = encodeURIComponent(
+      "Hey! Join me in 40 Days of Prayer for America! " +
+      "As our nation marks 250 years, let's pray together for revival and healing. " +
+      "Visit: https://40daysprayer.org #PrayForAmerica"
+    );
+    window.location.href = "sms:?&body=" + msg;
+  }
+
+  function copyLink() {
+    var url = document.getElementById('shareUrl').value;
+    var btn = document.getElementById('copyBtn');
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(function() { showToast(); });
+    } else {
+      var el = document.getElementById('shareUrl');
+      el.select();
+      document.execCommand('copy');
+      showToast();
+    }
+    if (btn) {
+      btn.textContent = 'Copied!';
+      btn.style.color = '#4CAF50';
+      btn.style.borderColor = '#4CAF50';
+      setTimeout(function() {
+        btn.textContent = 'Copy';
+        btn.style.color = '';
+        btn.style.borderColor = '';
+      }, 2000);
+    }
+  }
+
+  function showToast() {
+    var t = document.getElementById('toast');
+    if (!t) return;
+    t.classList.add('show');
+    setTimeout(function() { t.classList.remove('show'); }, 2500);
+  }
+
+  // ── EXPOSE TO GLOBAL SCOPE ────────────────────────────────────────────────
+  // ── CLICK DELEGATION (replaces all onclick attrs) ──────────────────────
+  document.addEventListener('click', function(e) {
+    var el = e.target;
+
+    // data-page navigation
+    var pageEl = el.closest ? el.closest('[data-page]') : null;
+    if (!pageEl && el.getAttribute && el.getAttribute('data-page')) pageEl = el;
+    if (pageEl) { e.preventDefault(); showPage(pageEl.getAttribute('data-page')); return; }
+
+    // data-action
+    var actEl = el.closest ? el.closest('[data-action]') : null;
+    if (!actEl && el.getAttribute && el.getAttribute('data-action')) actEl = el;
+    if (actEl) {
+      var action = actEl.getAttribute('data-action');
+      if (action === 'share')       { e.preventDefault(); openShare(); return; }
+      if (action === 'menu')        { toggleMobile(); return; }
+      if (action === 'closeshare')  { closeShare(); return; }
+      if (action === 'overlayclose'){ if (e.target === actEl) closeShare(); return; }
+      if (action === 'sms')         { openSMS(); return; }
+      if (action === 'copy')        { copyLink(); return; }
+    }
+
+    // data-day (day tabs)
+    var dayEl = el.closest ? el.closest('[data-day]') : null;
+    if (!dayEl && el.getAttribute && el.getAttribute('data-day')) dayEl = el;
+    if (dayEl) { selectDay(parseInt(dayEl.getAttribute('data-day'), 10)); return; }
+
+    // data-prayedday (I Prayed button)
+    var prayEl = el.closest ? el.closest('[data-prayedday]') : null;
+    if (!prayEl && el.getAttribute && el.getAttribute('data-prayedday')) prayEl = el;
+    if (prayEl) { handlePrayedClick(parseInt(prayEl.getAttribute('data-prayedday'), 10)); return; }
+  });
+
+  // ── INIT ─────────────────────────────────────────────────────────────────
+
+  // ── LOGIN ──────────────────────────────────────────────────────────────
+  //
+  // TEXT OPT-IN: Replace the submitOptIn function below with your
+  // provider's form POST. Common examples are shown — uncomment yours.
+  //
+  // ── GROUP LOOKUP TABLE ────────────────────────────────────────────────
+  // Key format: "TIME|TIMEZONE"  →  Ministry by Text group ID
+  var MBT_GROUPS = {
+    '7:00 AM|ET': 'd4dd28e0-dd82-44d8-b205-12e9d9865b3d',
+    '7:00 AM|CT': '81e6add3-5d22-4391-8167-55831c1c1cd9',
+    '7:00 AM|MT': '64c86ae8-e9b9-462c-af3b-4fe27c6686ba',
+    '7:00 AM|PT': '618ba0ff-87d5-4ba7-8eda-d3f28055c59e',
+    '7:30 AM|ET': '7f399620-4185-4a25-979f-d076d348c37a',
+    '7:30 AM|CT': '8f81eacd-c19b-4298-bb7b-fc013cfa7504',
+    '7:30 AM|MT': 'a35b7f1a-29a0-400b-8298-3ccd2184a62c',
+    '7:30 AM|PT': 'aed07e40-b9ff-4bff-a60a-7217e85f4392'
+  };
+
+  var MBT_BASE = 'https://api.ministrybytext.com/accounts/75dbe793-56c9-4a80-8d37-54dcffe469b7/' +
+                 'campus/ca1e8adb-550e-47c3-8475-5f116c3211ff/groups/';
+
+  function submitOptIn(firstName, lastName, phone, time, timezone) {
+    var key = time + '|' + timezone;
+    var groupId = MBT_GROUPS[key];
+    if (!groupId) {
+      console.warn('[OptIn] No group found for key:', key);
+      return;
+    }
+    var url = MBT_BASE + groupId + '/optin-subscriber';
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({
+        FirstName: firstName,
+        LastName:  lastName,
+        MobileNo:  phone
+      })
+    }).catch(function() {}); // fire-and-forget, no confirmation wait
+  }
+
+  function formatPhone(raw) {
+    // Strip non-digits
+    return raw.replace(/\D/g, '');
+  }
+
+  function validateLogin(first, last, phone, timezone, time) {
+    if (!first.trim()) return 'Please enter your first name.';
+    if (!last.trim()) return 'Please enter your last name.';
+    var digits = formatPhone(phone);
+    if (digits.length < 10) return 'Please enter a valid 10-digit phone number.';
+    if (!timezone) return 'Please select your timezone.';
+    if (!time) return 'Please select your reminder time.';
+    return null;
+  }
+
+  function saveUser(first, last, phone, timezone, time) {
+    try {
+      localStorage.setItem('ndop_user', JSON.stringify({
+        firstName: first.trim(),
+        lastName: last.trim(),
+        phone: formatPhone(phone),
+        timezone: timezone,
+        reminderTime: time
+      }));
+    } catch(e) {}
+  }
+
+  function loadUser() {
+    try {
+      var raw = localStorage.getItem('ndop_user');
+      return raw ? JSON.parse(raw) : null;
+    } catch(e) { return null; }
+  }
+
+  function showGreeting(firstName) {
+    var bar = document.getElementById('greetingBar');
+    var name = document.getElementById('greetingName');
+    if (bar && name) {
+      name.textContent = firstName;
+      bar.classList.add('visible');
+    }
+  }
+
+  function dismissLogin() {
+    var overlay = document.getElementById('loginOverlay');
+    if (overlay) overlay.classList.add('hidden');
+  }
+
+  function initLogin() {
+    var user = loadUser();
+    if (user) {
+      // Already registered — skip modal, show greeting
+      dismissLogin();
+      showGreeting(user.firstName);
+      return;
+    }
+
+    // Show modal — wire up submit
+    var submitBtn = document.getElementById('loginSubmit');
+    var errorEl   = document.getElementById('loginError');
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', function() {
+        var first    = document.getElementById('loginFirst').value;
+        var last     = document.getElementById('loginLast').value;
+        var phone    = document.getElementById('loginPhone').value;
+        var timezone = document.getElementById('loginTimezone').value;
+        var time     = document.getElementById('loginTime').value;
+
+        // Clear previous errors
+        errorEl.textContent = '';
+        ['loginFirst','loginLast','loginPhone','loginTimezone','loginTime'].forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el) el.classList.remove('error');
+        });
+
+        var err = validateLogin(first, last, phone, timezone, time);
+        if (err) {
+          errorEl.textContent = err;
+          if (!first.trim())                   document.getElementById('loginFirst').classList.add('error');
+          if (!last.trim())                    document.getElementById('loginLast').classList.add('error');
+          if (formatPhone(phone).length < 10)  document.getElementById('loginPhone').classList.add('error');
+          if (!timezone)                       document.getElementById('loginTimezone').classList.add('error');
+          if (!time)                           document.getElementById('loginTime').classList.add('error');
+          return;
+        }
+
+        // Disable button while processing
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Joining…';
+
+        // Fire opt-in to correct Ministry by Text group (no confirmation wait)
+        submitOptIn(first.trim(), last.trim(), formatPhone(phone), time, timezone);
+
+        // Save user locally
+        saveUser(first, last, phone, timezone, time);
+
+        // Dismiss modal and show greeting
+        dismissLogin();
+        showGreeting(first.trim());
+      });
+
+      // Allow Enter key to submit
+      ['loginFirst','loginLast','loginPhone'].forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') submitBtn.click();
+        });
+      });
+
+      // Auto-format phone as user types
+      var phoneEl = document.getElementById('loginPhone');
+      if (phoneEl) {
+        phoneEl.addEventListener('input', function() {
+          var digits = this.value.replace(/\D/g, '').substring(0, 10);
+          if (digits.length >= 7) {
+            this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3,6) + '-' + digits.substring(6);
+          } else if (digits.length >= 4) {
+            this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3);
+          } else if (digits.length > 0) {
+            this.value = '(' + digits;
+          }
+        });
+      }
+    }
+  }
+
+  // Run login init on DOM ready
+  document.addEventListener('DOMContentLoaded', function() {
+    buildDailyPrayer();
+    initLogin();
+  });
+
+
+    window.showPage          = showPage;
+  window.toggleMobile      = toggleMobile;
+  window.selectDay         = selectDay;
+  window.openShare         = openShare;
+  window.closeShare        = closeShare;
+  window.closeShareOnOverlay = closeShareOnOverlay;
+  window.openSMS           = openSMS;
+  window.copyLink          = copyLink;
+
+  // ── RESIZE ────────────────────────────────────────────────────────────────
+    window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      var menu = document.getElementById('mobileMenu');
+      if (menu) menu.classList.remove('open');
+    }
+  });
+
+})(); // end IIFE
+</script>
+</body>
+</html>
